@@ -1,0 +1,83 @@
+.PageFooter {
+	font-family: @font-base;
+	background: #22254A;
+	display: flex;
+	height: 300px;
+	box-shadow: @shadow-defaut;
+
+	&-logo-image {
+		width: 90%;
+		margin: 25px;
+
+		@media all and (max-width: 768px) and (min-width: 480px) {
+			width: @size-adaptive;
+			margin-top: 40px;
+			margin-left: 100px; 
+		}
+
+		@media all and (max-width: 480px) and (min-width: 320px) {
+			width: @size-adaptive;
+			margin-top: 40px;
+			margin-left: 70px;
+		}
+	}
+}
+
+.PageFooter-navigation {
+	height: @size-adaptive;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+
+	&-item {
+		height: @size-adaptive;
+		width: @size-adaptive;
+		display: flex;
+	}
+
+	&-item-link {
+		border-top: 1px solid #F5F7FF;
+		border-right: 1px solid #F5F7FF;
+		box-shadow: 0 0 5px 1px #F5F7FF;
+		font-size: 20px;
+		color: #F5F7FF;
+		text-decoration: none;
+		width: @size-adaptive;
+		text-align: center;
+		padding: 20px 0;
+
+		&:hover {
+			background: #4850C9;
+		}
+	}
+}
+
+.PageFooter-social {
+	border-top: 1px solid #F5F7FF;
+	border-left: 1px solid #F5F7FF;
+	box-shadow: 0 0 5px 1px #F5F7FF;
+	width: 300px;
+	height: 80px;
+	align-self: flex-end;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	@media all and (max-width: 768px) and (min-width: 480px) {
+		width: @size-adaptive;
+	}
+
+	@media all and (max-width: 480px) and (min-width: 320px) {
+		width: @size-adaptive;
+		justify-content: space-between;
+	}
+
+	&-link-size {
+		font-size: 50px;
+		color: #F5F7FF;
+
+		@media all and (max-width: 480px) and (min-width: 320px) {
+			font-size: 40px;
+		}
+	}
+}

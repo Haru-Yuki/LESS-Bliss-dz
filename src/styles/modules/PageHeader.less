@@ -1,0 +1,44 @@
+.PageHeader {
+	font-family: @font-base;
+}
+
+.PageHeader-MainNavigation {
+	height: 70px;
+
+	&-list {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background: linear-gradient(#5BC3FF, #1400FF);
+		height: @size-adaptive;
+		box-shadow: @shadow-defaut;
+	}
+
+	&-item {
+		justify-content: center;
+		display: flex;
+		width: @size-adaptive;
+	}
+
+	&-logo {
+		width: @size-adaptive;
+		height: @size-adaptive;
+	}
+
+	&-item-link {
+		width: @size-adaptive;
+		padding: 23.5px 0;
+		color: #F5F7FF;
+		font-size: 18px;
+		text-decoration: none;
+		text-align: center;
+		border-right: 1px solid #3C156B;
+
+			&:hover {
+				background: #D4DBFF;
+				opacity: 0.8;				
+				background: linear-gradient(#5BC3FF, #1400FF);
+				background-image: url(../images/header.png);
+			}
+	}
+}
